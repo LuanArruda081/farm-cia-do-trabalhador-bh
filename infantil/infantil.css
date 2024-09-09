@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+
+header{
+    background-color: #ec3237;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.header-conteiner{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 500;
+    & img{
+        width: 200px;
+        height: 150px;
+        cursor: pointer;
+    }
+}
+
+.header-outros{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.outros{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition:  0.3s ease-in-out;
+    padding: 25px;
+    border-radius: 10px;
+   & a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    gap: 5px;
+    
+    & p{
+        color: white;
+    }
+   }
+
+   & img{
+    width: 40px;
+    height: 40px;
+   }
+}
+
+.outros:hover{
+    background-color: #fc7277;
+}
+
+.procurar{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 500px;
+   position: relative;
+   padding: 50px;
+
+
+   & input{
+    width: 100%;
+    position: absolute;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+   }
+
+
+   & i{
+    position: absolute;
+    right: 0;
+    padding: 5px;
+   }
+}
+#navegacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 375px;
+    z-index: -1;
+}
+.navegacao-conteiner{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    & h2{
+        margin-left: 4rem;
+    }
+}
+nav{
+    margin: auto;
+}
+.navegacao-conteiner ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    & a{
+        text-decoration: none;
+        color: #000;
+        transition: 0.3s ease-in-out;
+
+    }
+
+    & a:hover{
+        color: rgb(0, 255, 64);
+    }
+
+}
+.cor-infantil{
+    color: rgb(0, 255, 64);
+}
+

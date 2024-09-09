@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Farmácia do Trabalhador BH</title>
+</head>
+<body>
+    <header>
+
+        <div class="header-conteiner">
+
+            <img src="./imgs/logo.png" alt="" class="logotipo">
+
+            <div class="procurar">
+                <input type="text" placeholder="O que você procura?">   
+                <i class="fa-solid fa-magnifying-glass" style="color: #464646cc;"></i>          
+            </div>
+           
+          <div class="header-outros">
+
+            <div id="login" class="outros">
+                <a href="./TelaLogin/telalogin.html">
+                    <img src="./imgs/icone-perfil.png" alt="imagem de login">
+                    <div>
+                        <p>Oii, Bem-vindo!</p>
+                        <a href="./TelaLogin/telalogin.html">Entrar</a>
+                    </div>
+
+                </a>
+            </div>
+
+            <div id="local" class="outros">
+                <a href="">
+                    <img src="./imgs/icone-localizacao.png" alt="imagem de localização">
+                    <div>
+                        <p>Sua localização</p>
+                        <a href="">Local</a>
+                    </div>
+                </a>
+
+            </div>
+
+            <div id="cesta" class="outros">
+                <button class="cestinha" onclick="abrirCestinha()">
+                    <img src="./imgs/icone-cestinha.png" alt="imagem de uma cesta">
+                    <p>Meu carrinho</p>
+                </button>
+            </div>
+
+          </div>
+
+        </div>
+
+    </header>
+    <section id="navegacao">
+        <div class="navegacao-conteiner">
+            <h2>
+                Categorias
+            </h2>
+            <nav>
+                <ul>
+
+                    <li>
+                        <a href="./infantil/infantil.html">
+                            Infantil
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./dermocosmeticos/dermocosmeticos.html">
+                            Dermocosméticos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./medicamentos/medicamentos.html">
+                            Medicamentos e Saúde
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./higiene/higiene.html">
+                            Higiene e Beleza
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section id="principal">
+        <div class="conteiner-principal">
+
+            <div class="primeiras-ofertas">
+                <a href="">
+                    <img src="./imgs/higiene-infantil.png" alt="">
+                </a>
+            </div>
+
+            <div class="primeiras-ofertas">
+                <a href="">
+                    <img src="./imgs/protetores.png" alt="">
+                </a>
+            </div>
+
+            <div class="primeiras-ofertas">
+                <a href="">
+                    <img src="./imgs/dermocosmeticos.png" alt="">
+                </a>
+            </div>
+
+            <div class="primeiras-ofertas">
+                <a href="">
+                    <img src="./imgs/cuidado-corporal.png" alt="">
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+
+
+    <section class="cetinhaAberta">
+
+        <div class="cestinha-conteiner">
+
+            <div class="topo-cestinha">
+
+                <p>
+                    Seu carrinho
+                </p>
+
+                <button id="fecharCestinha" onclick="fechandoCesta()">
+                    X
+                </button>
+
+            </div>
+
+            <div class="meio-cestinha">
+
+                <img class="cesta-icone" src="https://img.icons8.com/?size=100&id=vp8QBEu8vmJX&format=png&color=000000" alt="">
+                <p>Eita!</p><br>
+                <p>Seu carrinho está vazio.</p>
+
+                <a href="">Veja nossas ofertas</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="maisvendido">
+        <div class="maisvendido-conteiner">
+            <h3>
+                Mais vendidos
+            </h3>
+            <div id="produtos-mais-vendidos">
+
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

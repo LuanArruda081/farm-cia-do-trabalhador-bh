@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+
+header{
+    background-color: #ec3237;
+    position: fixed;
+    width: 100%;
+    & img{
+        width: 200px;
+        height: 150px;
+        cursor: pointer;
+    }
+}
+
+
+main{
+
+}
+.conteiner-form{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        top: 10%;
+}
+
+form{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 30%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+   border-radius: 10px;
+    padding: 20px;
+    & input {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+.caixas-login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    
+    & input{
+        width: 100%;
+        border: 0;
+        border-radius: 20px;
+        outline: 0;
+        padding: 10px;
+        background-color: #d3d3d3d7;
+    }
+
+    & h4{
+        margin: 10px 0;
+    }
+}
+
+.form-lembrar{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    & input{
+        width: 20px;
+    }
+}
+
+.bt-entrar-login{
+    border: 0;
+    background-color: #ec3237;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.entrarcom{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid #b1b1b1be;
+    margin-top: 10px;
+    padding: 10px;
+    & button{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px;
+        background-color: #ccc;
+        border: 0;  
+        font-size: 17px;
+        cursor: pointer;
+    }
+}
+
+.voltar-login{
+    color: #ec3237;
+}
+
+@media (min-width:360px) and (max-width: 480px) {
+
+    .conteiner-form{
+        top: 16%;
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+    .caixas-login{
+        width: 90%;
+        & input{
+            width: 100%;
+            padding: 15px;
+        }
+    }
+
+    form{
+        width: 100%;
+        
+    }
+
+    .form-lembrar{
+        width: 80%;
+    }
+}
