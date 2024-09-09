@@ -73,6 +73,7 @@ header{
    top: 0;
    right: 1;
    width: 100%;
+   background-color: #ff9da04f;
 }
 .cestinha{
     display: flex;
