@@ -155,7 +155,8 @@ header{
     }
 }
 
-.procurar{
+/* metodo procura utilizando form*/
+.procurar fomr{
    display: flex;
    align-items: center;
    justify-content: center;
@@ -180,6 +181,8 @@ header{
     padding: 5px;
    }
 }
+/*end form*/
+
 #navegacao{
     display: flex;
     justify-content: center;
