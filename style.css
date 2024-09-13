@@ -233,14 +233,94 @@ nav{
 #maisvendido{
     display: flex;
     justify-content: left;
-}
-
-.maisvendido-conteiner{
-    width: 90%;
-    margin: auto;
+    height: 60vh;
+    flex-direction: column;
 
     & h3{
         color: #ec3237;
         font-size: 25px;
+        margin-left: 5%;
+    }
+
+    
+}
+
+.maisvendido-conteiner{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.produtos-mais-vendidos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & img{
+        width: 250px;
+        height: 250px;
+    }
+
+    & .sobreoproduto{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 10px;
+        border-bottom: 1px solid #bdbdbda4;
+    }
+
+    & a{
+        text-decoration: none;
+        color: #464646;
+    }
+
+    & .preco{
+        padding: 10px;
+        font-size: 20px;
+        color: #000;
+    }
+
+    .verproduto{
+        background-color: #ec3237;
+        padding: 15px;
+        color: #fff;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+    }
+
+    .verproduto:hover{
+        background-color: #75171a;
     }
 }
+.topicoscapilar{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & p{
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 50px;
+        color: #ec3237;
+    }
+}
+
+.tc-conteiner{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+   
+
+    & a{
+        height: 100px;
+        border-radius: 50%;
+
+      
+    }
+}
+
