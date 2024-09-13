@@ -15,10 +15,23 @@
             <img src="./imgs/logo.png" alt="" class="logotipo">
 
             <div class="procurar">
+<<<<<<< HEAD
                 <input type="text" placeholder="O que você procura?">   
                 <i class="fa-solid fa-magnifying-glass" style="color: #464646cc;"></i>          
             </div>
  
+=======
+                <!--coloquei a barra de pesquisa dentro de um form para poder procurar ao clicar em enter-->
+                <!--NOTA: ta faltando acionar a lupa para poder ser clicavel e assim tambem procurar ao clicar com o mouse-->
+                <form id="searchForm" onsubmit="buscarProduto(); return false;"> <!-- Formulário -->
+                    <input type="text" id="searchInput" placeholder="O que você procura?">   
+                    <i class="fa-solid fa-magnifying-glass" style="color: #464646cc;" onclick="buscarProduto()"></i> <!-- Ícone de lupa -->
+                </form>
+                <!--end form-->
+            </div>   
+           
+          <div class="header-outros">
+>>>>>>> 38ac85cadfce8af3573b0d3732b315f6346ec3b9
 
         
 
