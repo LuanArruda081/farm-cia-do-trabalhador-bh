@@ -1,5 +1,6 @@
 Atualizações:
-Tela de Login 100% feita
-Carrinho (Front) feito, mas falta animações
+coloque produtos ilustrativos pois n temos um banco de dados
+e coloquei topicos de marcas de cuidados de cabelo
 
-Precisamos colocar os produtos urgente!
+minha ideia era colocar uma pequena listas de produtos e logo após uns topicos ou slides, imagens indicando promoções
+ou imagens de marcas, enfim, fazendo esse padrão. 
