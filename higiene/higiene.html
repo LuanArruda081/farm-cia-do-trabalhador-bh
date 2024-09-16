@@ -36,16 +36,13 @@
 
           <!-- Cestinha -->
 
+ 
           <div id="cesta" class="outros">
-
-            <a href="">
-
-              <img src="./img-higiene/icone-cestinha.png" alt="imagem de uma cesta"/>
-              <p>Meu carrinho</p>
-
-            </a>
-
-          </div>
+            <button class="cestinha" onclick="abrirCestinha()">
+                <img src="./img-higiene/icone-cestinha.png" alt="imagem de uma cesta">
+                <p>Meu carrinho</p>
+            </button>
+        </div>
 
         </div>
 
@@ -89,5 +86,36 @@
         </nav>
       </div>
     </section>
+
+    <section class="cetinhaAberta">
+
+      <div class="cestinha-conteiner">
+
+          <div class="topo-cestinha">
+
+              <p>
+                  Seu carrinho
+              </p>
+
+              <button id="fecharCestinha" onclick="fechandoCesta()">
+                  X
+              </button>
+
+          </div>
+
+          <div class="meio-cestinha">
+
+              <img class="cesta-icone" src="https://img.icons8.com/?size=100&id=vp8QBEu8vmJX&format=png&color=000000" alt="">
+              <p>Eita!</p><br>
+              <p>Seu carrinho está vazio.</p>
+
+              <a href="">Veja nossas ofertas</a>
+          </div>
+
+      </div>
+
+  </section>
+
+    <script src="higiene.js"></script>
   </body>
 </html>

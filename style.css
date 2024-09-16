@@ -13,7 +13,7 @@ header{
     background-color: #ec3237;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 999;
 }
 
 .header-conteiner{
@@ -33,6 +33,7 @@ header{
     display: flex;
     gap: 3rem;
     align-items: center;
+    height: 100%;
 }
 
 .outros{
@@ -64,16 +65,42 @@ header{
     background-color: #fc7277;
 }
 
+.procurar{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 500px;
+   position: relative;
+   padding: 50px;
+
+
+   & input{
+    width: 100%;
+    position: absolute;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+   }
+
+
+   & i{
+    position: absolute;
+    right: 0;
+    padding: 5px;
+   }
+}
 
 
 .cetinhaAberta{
    display: flex;
    justify-content: right;
-   position: absolute;
+   position: fixed;
    top: 0;
    right: 1;
    width: 100%;
    background-color: #ff9da04f;
+   z-index: 8888;
 }
 .cestinha{
     display: flex;
@@ -109,10 +136,18 @@ header{
     position: relative;
     padding: 15px;
     background-color: #fff;
+    opacity: 0; /* Início invisível */
+    transform: translateX(100%); /* Começa fora da tela */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Suaviza a transição */
 }
 
 .active{
     display: flex;
+    animation: abrirCestinha 0.3s forwards;
+}
+
+.inactive {
+    animation: fecharCestinha 0.3s forwards; /* Animação ao fechar */
 }
 
 .topo-cestinha{
@@ -155,33 +190,31 @@ header{
     }
 }
 
-/* metodo procura utilizando form*/
-.procurar fomr{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 500px;
-   position: relative;
-   padding: 50px;
 
-
-   & input{
-    width: 100%;
-    position: absolute;
-    padding: 10px;
-    border: 0;
-    outline: 0;
-    border-radius: 10px;
-   }
-
-
-   & i{
-    position: absolute;
-    right: 0;
-    padding: 5px;
-   }
+@keyframes abrirCestinha {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
-/*end form*/
+
+@keyframes fecharCestinha {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+
+
 
 #navegacao{
     display: flex;
@@ -244,7 +277,7 @@ nav{
         font-size: 25px;
         margin-left: 5%;
     }
-<<<<<<< HEAD
+
 
     
 }
@@ -300,7 +333,8 @@ nav{
     }
 }
 .topicoscapilar{
-    height: 40vh;
+    height: 45vh;
+    margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -328,6 +362,4 @@ nav{
     }
 }
 
-=======
-}
->>>>>>> 38ac85cadfce8af3573b0d3732b315f6346ec3b9
+
